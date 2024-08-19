@@ -4,7 +4,7 @@ Description=Mount varese Fachgebiet share
 [Mount]
 What=//varese.ak.tu-berlin.de/Fachgebiet
 Where=/mnt/varese/Fachgebiet
-Options=_netdev,credentials=/etc/samba/credentials/varese.ak.tu-berlin.de,iocharset=utf8,rw,uid=faressc,gid=faressc,vers=3.0,mfsymlinks
+Options=_netdev,credentials=/etc/samba/credentials/varese.ak.tu-berlin.de,iocharset=utf8,rw
 Type=cifs
 TimeoutSec=30
 
