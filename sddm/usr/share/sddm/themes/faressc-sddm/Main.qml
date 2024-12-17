@@ -7,14 +7,6 @@ Item {
   id: root
   height: Screen.height
   width: Screen.width
-  Rectangle {
-    id: background
-    anchors.fill: parent
-    height: parent.height
-    width: parent.width
-    z: 0
-    color: config.base
-  }
   Image {
     id: backgroundImage
     anchors.fill: parent
@@ -39,10 +31,32 @@ Item {
     Clock {
       id: time
       visible: config.ClockEnabled == "true" ? true : false
+      anchors {
+        horizontalCenter: parent.horizontalCenter
+        verticalCenter: parent.verticalCenter
+        verticalCenterOffset: -Screen.height * 0.25
+      }
     }
     LoginPanel {
       id: loginPanel
       anchors.fill: parent
+      z: 5
+    }
+    PowerStatePanel {
+      id: powerStatePanel
+      anchors {
+        bottom: parent.bottom
+        left: parent.left
+      }
+      z: 5
+    }
+    SessionPanel {
+      id: sessionPanel
+      anchors {
+        bottom: parent.bottom
+        right: parent.right
+      }
+      z: 5
     }
   }
 }

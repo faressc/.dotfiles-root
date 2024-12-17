@@ -1,0 +1,11 @@
+[SddmGreeterTheme]
+Name=Faressc Theme
+Description=Custom theme for SDDM
+Type=sddm-theme
+Version=0.1
+MainScript=Main.qml
+ConfigFile=theme.conf
+Theme-Id=faressc-sddm
+Theme-API=0.1
+License=MIT
+QtVersion=6
