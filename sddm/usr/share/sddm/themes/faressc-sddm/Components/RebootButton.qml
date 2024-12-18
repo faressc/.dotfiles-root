@@ -55,6 +55,6 @@ Item {
         }
       }
     }
-    onClicked: sddm.powerOff()
+    onClicked: sddm.reboot()
   }
 }
